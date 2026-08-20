@@ -2,13 +2,14 @@
 
 ## Run locally
 1. Install Node.js 18+.
-2. Open a terminal in `backend`.
-3. Create `.env` with your local port, admin key, and notification credentials.
-4. Run `npm install` then `npm start`.
-5. Visit http://localhost:3000
-6. Dashboard: http://localhost:3000/dashboard
+2. Install and start MySQL 8+, then create a database named `akkis_salon`.
+3. Open a terminal in `backend`.
+4. Set `MYSQL_HOST`, `MYSQL_PORT`, `MYSQL_USER`, `MYSQL_PASSWORD`, and `MYSQL_DATABASE` in `.env`.
+5. Run `npm install` then `npm start`.
+6. Visit http://localhost:3000
+7. Dashboard: http://localhost:3000/dashboard
 
-The backend uses Express + SQLite. Bookings are stored in `backend/akkis.db`.
+The backend uses Express + MySQL. Tables are created automatically in the configured `MYSQL_DATABASE`.
 
 Set `WHATSAPP_NUMBER` in `.env` using digits only, e.g. `919876543210`.
 
