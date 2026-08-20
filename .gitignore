@@ -1,5 +1,4 @@
 .env
 .env.*
 backend/.env
-backend/akkis.db
 node_modules/
